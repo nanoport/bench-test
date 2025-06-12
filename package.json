@@ -1,14 +1,10 @@
 {
-  "name": "bench-test",
+  "name": "vm-benchmark-server",
   "version": "1.0.0",
-  "description": "CPU benchmark HTTP service for Firecracker VMs",
+  "description": "CPU benchmark API for Vercel",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "build": "echo 'No build step needed'"
-  },
+  "scripts": {},
   "dependencies": {
-    "cpu-benchmark": "^1.0.1",
-    "express": "^4.18.2"
+    "cpu-benchmark": "1.0.0"
   }
 }
