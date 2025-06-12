@@ -2,7 +2,10 @@
   "name": "vm-benchmark-server",
   "version": "1.0.0",
   "description": "CPU benchmark API for Vercel",
-  "main": "index.js",
-  "scripts": {},
+  "main": "api/index.js",
+  "type": "module",
+  "scripts": {
+    "vercel-build": "echo 'Vercel build complete.'"
+  },
   "dependencies": {}
 }
