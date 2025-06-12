@@ -1,11 +1,9 @@
-// api/benchmark.js
-const cpuBenchmark = require('cpu-benchmark');
-
-module.exports = async (req, res) => {
-  try {
-    const result = await cpuBenchmark.benchmark(1);
-    res.status(200).json({ result });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+module.exports = (req, res) => {
+  const start = Date.now();
+  let x = 0;
+  for (let i = 0; i < 1e7; i++) {
+    x += Math.sin(i);
   }
+  const duration = Date.now() - start;
+  res.json({ time_ms: duration, result: x });
 };

@@ -4,7 +4,4 @@
   "description": "CPU benchmark API for Vercel",
   "main": "index.js",
   "scripts": {},
-  "dependencies": {
-    "cpu-benchmark": "1.0.0"
-  }
 }
