@@ -10,4 +10,3 @@ module.exports = (req, res) => {
     arch: os.arch()
   });
 };
-});
