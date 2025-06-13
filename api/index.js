@@ -1,12 +1,7 @@
-// api/index.js
-const os = require('os');
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-module.exports = (req, res) => {
-  res.status(200).json({
-    message: 'VM Benchmark Server (Vercel Function)',
-    hostname: os.hostname(),
-    uptime: os.uptime(),
-    platform: os.platform(),
-    arch: os.arch()
-  });
-};
+const App = () => <h1>Welcome to VM Benchmark Server</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

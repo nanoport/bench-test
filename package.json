@@ -1,19 +1,19 @@
 {
   "name": "vm-benchmark-server",
   "version": "1.0.0",
-  "description": "CPU benchmark API for Vercel",
-  "main": "api/index.js",
-  "type": "module",
+  "description": "Fake React frontend to trigger Vercel build",
   "scripts": {
-    "vercel-build": "echo 'Vercel build complete.'"
+    "build": "babel source --out-dir public --extensions \".jsx\""
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/preset-react": "^7.27.1",
-    "babel": "^5.8.38"
+    "@babel/cli": "^7.21.5",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "babel": {
+    "presets": ["@babel/preset-react"]
   }
 }
